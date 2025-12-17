@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>안녕하세요</title>
+    <style>
+        /* 모던한 느낌을 위한 설정 */
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Pretendard', -apple-system, sans-serif; 
+            background-color: #ffffff; /* 깔끔한 화이트 배경 */
+            color: #1d1d1f; 
+            line-height: 1.5;
+        }
+
+        /* 중앙 정렬 컨테이너 */
+        .wrapper {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 0 40px;
+        }
+
+        /* 이름 부분: 굵고 크게 */
+        .hero {
+            margin-bottom: 80px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        .hero span { color: #007aff; } /* 포인트 컬러: 블루 */
+
+        /* 리스트 스타일 */
+        .fav-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .fav-item {
+            text-align: left;
+        }
+
+        /* 사진: 깔끔한 사각형 또는 아주 살짝 둥근 모서리 */
+        .fav-item img {
+            width: 100%;
+            aspect-ratio: 1 / 1; /* 정정사각형 모양 */
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #f5f5f7;
+            margin-bottom: 15px;
+        }
+
+        .fav-item h3 {
+            font-size: 1.1rem;
+            margin: 0 0 5px 0;
+            font-weight: 600;
+        }
+
+        .fav-item p {
+            font-size: 0.9rem;
+            color: #86868b;
+            margin: 0;
+        }
+
+        /* 이모티콘 태그 스타일 */
+        .tag {
+            display: inline-block;
+            background: #f5f5f7;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="hero">
+            <p style="font-weight: 600; margin-bottom: 10px;">HELLO WORLD</p>
+            <h1>저는 <span>[박지효]</span>입니다.</h1>
+            <p style="font-size: 1.2rem; color: #86868b;">좋아하는 것들로 채운 저의 공간입니다.</p>
+        </header>
+
+        <div class="fav-section">
+            <div class="fav-item">
+                <div class="tag"> Photo</div>
+                <img src="cat.jpeg" alt="취미">
+                <h3>고양이</h3>
+                <p>작은 털동생 금동이를 키워요.</p>
+            </div>
+
+            <div class="fav-item">
+                <div class="tag"> Coffee</div>
+                <img src="book.jpg" alt="취미">
+                <h3>책 읽기</h3>
+                <p>방 안에서 조용히 책 읽기.</p>
+            </div>
+
+            <div class="fav-item">
+                <div class="tag"> Music</div>
+                <img src="matcha.jpg" alt="취미">
+                <h3>말차맛 간식</h3>
+                <p>새로운 간식이 나오면 항상 사 먹어요.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
